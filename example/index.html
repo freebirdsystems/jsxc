@@ -95,8 +95,8 @@
   logoutElement: $('#logout'),
   loadSettings: function() {
     return xmpp: {
-      url: '/http-bind/',
-      domain: 'localhost',
+      url: 'http://jabber.freebirdairlines.com:5280/http-bind',
+      domain: 'freebird.local',
       resource: 'example',
       overwrite: true,
       onlogin: true
@@ -147,7 +147,7 @@
 
                <pre>jsxc.init({
   xmpp: {
-    url: '/http-bind/'
+      url: 'http://jabber.freebirdairlines.com:5280/http-bind',
   },
   root: '/jsxc/'
 });
@@ -156,7 +156,7 @@ $('#submit').click(function(){
   var username = $('#username').val();
   var password = $('#password').val();
 
-  var jid = username + '@localhost';
+  var jid = username + '@freebird.local';
 
   jsxc.xmpp.login(jid , password);
 });
@@ -178,8 +178,8 @@ $('#submit').click(function(){
             <pre>jsxc.init({
   loadSettings: function() {
     return xmpp: {
-      url: '/http-bind/',
-      domain: 'localhost',
+      url: 'http://jabber.freebirdairlines.com:5280/http-bind',
+      domain: 'freebird.local',
       resource: 'example',
       overwrite: true,
       onlogin: true

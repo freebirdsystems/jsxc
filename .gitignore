@@ -1,3 +1,4 @@
+.idea
 node_modules
 *.zip
 *.zip.sig
@@ -20,3 +21,4 @@ dev/
 /lib/strophe.js/
 /lib/strophe.vcard/
 /lib/emojione/
+/lib/bootstrap-sass/
